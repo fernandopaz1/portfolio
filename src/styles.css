@@ -1,0 +1,49 @@
+.contenedor-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.red {
+    background-color: red;
+}
+.contenedor {
+    width: 50%;
+}
+#id1 {
+    width: 100px;
+}
+
+#id2 {
+    width: 70%; /*70% del padre*/
+}
+#id3 {
+    width: 100vw; /* del ancho del tamaño de la pantalla*/
+    font-size: 10vw; /*10vw del tamaño de la fuente*/
+}
+
+/*
+
+Las em estan atasdas al taaño de la fuente del elemento padre
+Si el elemento padre tiene 15px de fuente
+para el hijo 2em son 30px
+Para el hijo 1em == 15px
+
+
+fijas
+em unidades de tamaño de fuente ==> no
+rem tambien ==> si 
+
+
+rem esta atado el tamaño de letra qeu tiene el body
+
+*/
+
+@media screen and (max-width: 600px) {
+    .red {
+        background-color: blue;
+    }
+    .contenedor-principal {
+        flex-direction: column;
+    }
+}
