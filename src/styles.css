@@ -1,3 +1,7 @@
+@import url(https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+
+
 .contenedor-principal {
     display: flex;
     flex-direction: row;
@@ -22,9 +26,78 @@
     font-size: 10vw; /*10vw del tamaño de la fuente*/
 }
 
-/*
+body {
+    font-family: 'Open Sans';
+    height: 650px;
+    background-image: linear-gradient(to right top, #e96119, #cc3e3f, #9f2d4f, #6a284d, #39213a, #271c2d, #19151e, #0b0b0b, #0b0b0b, #0a0b0b, #090b0a, #0a0b09);
+}
 
-Las em estan atasdas al taaño de la fuente del elemento padre
+/* Fuente titulo principal */
+
+span {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+	letter-spacing: 1.5px;
+	font-size: 20px;
+	color: rgb(245, 245, 245);
+
+}
+h1, h2{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	letter-spacing: 1.5px;
+	font-size: 40px;
+	color: rgb(152, 236, 159);
+	
+}
+
+.about-text{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+	letter-spacing: 1.5px;
+	font-size: 25px;
+    color:rgb(243, 244, 245);
+}
+
+/* Botton  */
+button {
+    margin: 50px;
+    font-family: inherit;
+  }
+ /*  Simple button styling -- No animation */
+  .der , .izq {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 50px 13px;
+    outline: 0;
+    border: 1px solid rgb(240, 234, 234);
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  .der::after {
+    content: "";
+    background-color: #51c5e2;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+  }
+
+  .izq::after{
+    content: "";
+    background-color: #51c5e2;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+  }
+
+
+/* Las em estan atasdas al taaño de la fuente del elemento padre
 Si el elemento padre tiene 15px de fuente
 para el hijo 2em son 30px
 Para el hijo 1em == 15px
