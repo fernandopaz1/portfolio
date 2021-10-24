@@ -1,6 +1,26 @@
 @import url(https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap);
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap");
 
+/* Para poder ver los tamaños de todo */
+/* * {
+    border: 1px solid red;
+} */
+
+:root {
+    font-size: 15px;
+    --red: #ff6f69;
+    --beige: #ffeead;
+    --yellow: #ffcc5c;
+    --dark-yellow: #ffe600;
+    --green: #7ed321;
+    --dark-green: #00b200;
+    --white: rgb(245, 245, 245);
+    --title-color: rgb(152, 236, 159);
+    --button-background: #51c5e2;
+    --button-border: rgb(240, 234, 234);
+    --black: #000;
+    --transparent: rgba(0, 0, 0, 0);
+}
 
 .contenedor-principal {
     display: flex;
@@ -9,7 +29,7 @@
 }
 
 .red {
-    background-color: red;
+    background-color: var(--red);
 }
 .contenedor {
     width: 50%;
@@ -27,75 +47,99 @@
 }
 
 body {
-    font-family: 'Open Sans';
-    height: 650px;
-    background-image: linear-gradient(to right top, #e96119, #cc3e3f, #9f2d4f, #6a284d, #39213a, #271c2d, #19151e, #0b0b0b, #0b0b0b, #0a0b0b, #090b0a, #0a0b09);
+    font-family: "Open Sans";
+    /* height: 100vh; */
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+        to right top,
+        #e96119,
+        #cc3e3f,
+        #9f2d4f,
+        #6a284d,
+        #39213a,
+        #271c2d,
+        #19151e,
+        #0b0b0b,
+        #0b0b0b,
+        #0a0b0b,
+        #090b0a,
+        #0a0b09
+    );
 }
 
 /* Fuente titulo principal */
 
 span {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-	letter-spacing: 1.5px;
-	font-size: 20px;
-	color: rgb(245, 245, 245);
-
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    letter-spacing: 0.1vw;
+    font-size: 1.46vw;
+    color: var(--white);
 }
-h1, h2{
-	font-family: 'Yanone Kaffeesatz', sans-serif;
-	letter-spacing: 1.5px;
-	font-size: 40px;
-	color: rgb(152, 236, 159);
-	
+h1,
+h2 {
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    letter-spacing: 0.1vw;
+    font-size: 2.92vw;
+    color: var(--title-color);
 }
 
-.about-text{
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-	letter-spacing: 1.5px;
-	font-size: 25px;
-    color:rgb(243, 244, 245);
+section {
+    width: 90%;
+    margin-bottom: 7.32vw;
+}
+
+.about-text {
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    letter-spacing: 0.1vw;
+    font-size: 1.83vw;
+    color: var(--white);
 }
 
 /* Botton  */
 button {
-    margin: 50px;
+    margin: 3.66vw;
     font-family: inherit;
-  }
- /*  Simple button styling -- No animation */
-  .der , .izq {
-    font-size: 20px;
+    border-radius: 0px 0px 0px 1vw;
+}
+/*  Simple button styling -- No animation */
+.der,
+.izq {
+    font-size: 1.46vw;
     font-weight: 200;
-    letter-spacing: 1px;
-    padding: 13px 50px 13px;
+    letter-spacing: 0.07vw;
+    padding: 0.95vw 3.66vw 0.95vw;
     outline: 0;
-    border: 1px solid rgb(240, 234, 234);
+    border: 1px solid var(--button-border);
     cursor: pointer;
     position: relative;
-    background-color: rgba(0, 0, 0, 0);
-  }
-  
-  .der::after {
+    border-radius: 0px 0px 0px 1vw;
+    background-color: var(--transparent);
+}
+
+.der::after {
     content: "";
-    background-color: #51c5e2;
+    background-color: var(--button-background);
     width: 100%;
     z-index: -1;
     position: absolute;
     height: 100%;
-    top: 7px;
-    left: 7px;
-  }
+    top: 0.51vw;
+    left: 0.51vw;
+    border-radius: 0px 0px 0px 1vw;
+}
 
-  .izq::after{
+.izq::after {
     content: "";
-    background-color: #51c5e2;
+    background-color: var(--button-background);
     width: 100%;
     z-index: -1;
     position: absolute;
     height: 100%;
-    top: 7px;
-    left: 7px;
-  }
-
+    top: 0.51vw;
+    left: 0.51vw;
+    border-radius: 0px 0px 0px 1vw;
+}
 
 /* Las em estan atasdas al taaño de la fuente del elemento padre
 Si el elemento padre tiene 15px de fuente
@@ -111,12 +155,50 @@ rem tambien ==> si
 rem esta atado el tamaño de letra qeu tiene el body
 
 */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-@media screen and (max-width: 600px) {
-    .red {
-        background-color: blue;
+/*  Estilos de presentacion*/
+#seccion-presentacion {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+}
+#contenedor-imagen-presentacion {
+    display: flex;
+    align-items: flex-end;
+    /* width: 40vw; */
+    height: auto;
+    max-width: 600px;
+    margin-bottom: 0px;
+}
+#imagen-presentacion {
+    width: 40vw;
+    height: auto;
+    max-width: 600px;
+    margin-bottom: 0px;
+}
+#descripcion-presentacion {
+    font-size: 1.83vw;
+}
+
+@media screen and (max-width: 1200px) {
+    #contenedor-imagen-presentacion {
+        display: none;
     }
-    .contenedor-principal {
-        flex-direction: column;
+    #contenedor-texto-presentacion {
+        width: 100%;
+        justify-self: center;
+    }
+    #seccion-presentacion {
+        height: auto;
+    }
+    section {
+        margin-bottom: 10vw;
     }
 }
