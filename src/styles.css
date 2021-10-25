@@ -2,9 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap");
 
 /* Para poder ver los tamaños de todo */
-/* * {
+* {
     border: 1px solid red;
-} */
+}
 
 :root {
     font-size: 15px;
@@ -129,6 +129,8 @@ button {
     border-radius: 0px 0px 0px 1vw;
 }
 
+
+
 .izq::after {
     content: "";
     background-color: var(--button-background);
@@ -201,4 +203,28 @@ main {
     section {
         margin-bottom: 10vw;
     }
+}
+
+/* Menu de navegacion */
+#menu-container {
+    display: flex;
+    flex-direction: row; /* en file*/
+    width: 100%;
+    justify-content: space-evenly;
+    height: 3.5rem;
+}
+
+#items-container {
+    display: flex;
+    flex-direction: row; /* en file*/
+    justify-content: space-between;
+}
+
+.items{
+    color: var(--white);
+    list-style:none;
+    margin-left: 10px;
+}
+.btn-menu{
+    margin:0px
 }
