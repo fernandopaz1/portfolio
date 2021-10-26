@@ -9,13 +9,6 @@
 
     <body id="document">
         <div class="contenedor-principal">
-            <!-- <div id="id1" class="red">Hola</div>
-
-            <div class="contenedor">
-                <div id="id2" class="red">Hola</div>
-            </div>
-
-            <div id="id3" class="red">Hola</div> -->
         </div>
         <div id="menu-container">
             <nav id="menu-items">
@@ -85,7 +78,33 @@
                         </div>
                             <button type="button" class="der">Meli</button>
                             <button type="button" class="izq">Na</button>
+            </section>
+
+            <section id="contacto">
+                <div id="email-div">
+                    <h1>Contacto</h1>
+                    <form id="email-form-container" action="https://formsubmit.co/ferpaz9292@gmail.com" method="POST">
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Email" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea type="text" id="mensaje" name="mensaje" placeholder="Mensaje" cols="30" rows="10" maxlength="250" required></textarea>
+                        </div>
+                        <button type="submit" class="izq">Enviar</button>
+                    </form>
+                </div>
+                <div id="mobile-div">
+                    <img id="img-mobile-version" src="./assets/images/mobileversion.svg"/>
+                </div>
+                 </div>
+            </section>
         </main>
     </body>
-    <!-- <script type="text/javascript" src="scripts/tic-tac-toe.js"></script> -->
+    <!-- <script type="text/javascript" src="src/ubicacion.js"></script> -->
 </html>
