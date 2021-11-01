@@ -1,3 +1,3 @@
 btnMenu.addEventListener("click", (e) => {
-    window.location.href("./src/CV_MELINAZELAYA.pdf");
+    window.open('./src/CV_MELINAZELAYA.pdf', '_blank', 'fullscreen=yes'); return false;
 });

@@ -19,9 +19,10 @@
   --button-background: #51c5e2;
   --button-border: rgb(240, 234, 234);
   --black: #000;
-  --orange: #f8ab62;
+  --body-background: #f8ab62;
   --transparent: rgba(0, 0, 0, 0);
   --white-semi-transparent: rgba(225, 225, 225, 0.5);
+  --presentation-background: rgba(255, 222, 130, 0.5);
 }
 
 .contenedor-principal {
@@ -53,7 +54,7 @@ body {
   /* height: 100vh; */
   margin: 0px;
   background-repeat: no-repeat;
-  background-color: var(--orange);
+  background-color: var(--body-background);
 }
 
 /* Fuente titulo principal */
@@ -164,6 +165,13 @@ rem tambien ==> si
 rem esta atado el tamaño de letra qeu tiene el body
 
 */
+
+.card {
+    background-color: var(--presentation-background);
+    padding:30px;
+    border-radius: 10px;
+    box-shadow: 3px 3px rgb(247, 180, 35), -1em 0 0.4em rgb(255, 172, 94);}
+
 main {
   display: flex;
   flex-direction: column;
@@ -177,6 +185,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-self: center;
+
 }
 #contenedor-imagen-presentacion {
   display: flex;
@@ -209,6 +218,9 @@ main {
   }
   section {
     margin-bottom: 10vw;
+  }
+  #sobre-mi-columna2{
+      display: none;
   }
 }
 
@@ -270,4 +282,14 @@ main {
   height: 100%;
   object-fit: contain;
   max-width: 400px;
+}
+
+.columnas{
+    display:flex;
+    flex-direction: row-reverse;
+}
+
+.centrado-vertical{
+    display: flex;
+    align-items: center;
 }
