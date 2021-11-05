@@ -25,7 +25,7 @@
   --presentation-background: rgba(255, 222, 130, 0.5);
 }
 
-.contenedor-principal {
+.conteiner-skills {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -54,7 +54,7 @@ body {
   /* height: 100vh; */
   margin: 0px;
   background-repeat: no-repeat;
-  background-color: var(--body-background);
+  background-color: rgba(20, 22, 32, 0.918);
 }
 
 /* Fuente titulo principal */
@@ -72,9 +72,15 @@ h4 {
   font-family: "Yanone Kaffeesatz", sans-serif;
   letter-spacing: 0.1vw;
   font-size: 2.92vw;
-  color: var(--title-color);
+  color: rgb(154, 215, 243);
 }
 
+ul {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  letter-spacing: 0.5vw;
+  font-size: 2vw;
+  color: rgb(223, 221, 110);
+}
 input {
   height: 3vw;
   border-radius: 0.5vw;
@@ -129,46 +135,7 @@ button {
   background-color: var(--transparent);
 }
 
-.der::after {
-  content: "";
-  background-color: var(--button-background);
-  width: 100%;
-  z-index: -1;
-  position: absolute;
-  height: 100%;
-  top: 0.51vw;
-  left: 0.51vw;
-  border-radius: 0px 0px 0px 1vw;
-}
-
-.izq::after {
-  content: "";
-  background-color: var(--button-background);
-  width: 100%;
-  z-index: -1;
-  position: absolute;
-  height: 100%;
-  top: 0.51vw;
-  left: 0.51vw;
-  border-radius: 0px 0px 0px 1vw;
-}
-
-/* Las em estan atasdas al taaño de la fuente del elemento padre
-Si el elemento padre tiene 15px de fuente
-para el hijo 2em son 30px
-Para el hijo 1em == 15px
-
-
-fijas
-em unidades de tamaño de fuente ==> no
-rem tambien ==> si 
-
-
-rem esta atado el tamaño de letra qeu tiene el body
-
-*/
-
-.card {
+*/ .card {
   background-color: var(--presentation-background);
   padding: 30px;
   border-radius: 10px;
@@ -189,7 +156,7 @@ main {
   flex-direction: row;
   justify-self: center;
 }
-#contenedor-imagen-presentacion {
+#contenedor-imagen-skill {
   display: flex;
   align-items: flex-end;
   /* width: 40vw; */
@@ -197,14 +164,12 @@ main {
   max-width: 600px;
   margin-bottom: 0px;
 }
-#imagen-presentacion {
+
+#imagen-skill {
   width: 40vw;
   height: auto;
   max-width: 600px;
   margin-bottom: 0px;
-}
-#descripcion-presentacion {
-  font-size: 1.83vw;
 }
 
 @media screen and (max-width: 1200px) {
@@ -250,48 +215,4 @@ main {
   background: rgb(152, 236, 159);
   text-decoration: none;
   color: var(--black);
-}
-.btn-menu,
-.btn-icon {
-  margin: 5px;
-  background-color: var(--beige);
-  height: 35px;
-  color: var(--black);
-}
-
-.btn-icon {
-  position: absolute;
-  cursor: pointer;
-}
-
-/* Enviar mail  */
-.form-group {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 3vw;
-}
-#contacto {
-  display: flex;
-  flex-direction: row;
-}
-#email-div,
-#mobile-div {
-  width: 50%;
-}
-#img-mobile-version {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  max-width: 400px;
-}
-
-.columnas {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.centrado-vertical {
-  display: flex;
-  align-items: center;
 }
