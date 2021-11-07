@@ -3,154 +3,157 @@
 
 /* Para poder ver los tamaños de todo */
 * {
-  border: 1px solid red;
+    border: 1px solid red;
 }
 
 :root {
-  font-size: 15px;
-  --red: #ff6f69;
-  --beige: #ffeead;
-  --yellow: #ffcc5c;
-  --dark-yellow: #ffe600;
-  --green: #7ed321;
-  --dark-green: #00b200;
-  --white: rgb(245, 245, 245);
-  --title-color: rgb(152, 236, 159);
-  --button-background: #51c5e2;
-  --button-border: rgb(240, 234, 234);
-  --black: #000;
-  --body-background: #f8ab62;
-  --transparent: rgba(0, 0, 0, 0);
-  --white-semi-transparent: rgba(225, 225, 225, 0.5);
-  --presentation-background: rgba(255, 222, 130, 0.5);
+    font-size: 15px;
+    --red: #ff6f69;
+    --beige: #ffeead;
+    --yellow: #ffcc5c;
+    --dark-yellow: #ffe600;
+    --green: #7ed321;
+    --dark-green: #00b200;
+    --white: rgb(245, 245, 245);
+    --title-color: rgb(152, 236, 159);
+    --button-background: #51c5e2;
+    --button-border: rgb(240, 234, 234);
+    --black: #000;
+    --body-background: #f8ab62;
+    --transparent: rgba(0, 0, 0, 0);
+    --white-semi-transparent: rgba(225, 225, 225, 0.5);
+    --presentation-background: rgba(255, 222, 130, 0.5);
+    --side-menu-width: 300px;
+    --side-menu-collapsed-width: 50px;
+    --hover-color: #f89940;
 }
 
 .contenedor-principal {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .red {
-  background-color: var(--red);
+    background-color: var(--red);
 }
 .contenedor {
-  width: 50%;
+    width: 50%;
 }
 #id1 {
-  width: 100px;
+    width: 100px;
 }
 
 #id2 {
-  width: 70%; /*70% del padre*/
+    width: 70%; /*70% del padre*/
 }
 #id3 {
-  width: 100vw; /* del ancho del tamaño de la pantalla*/
-  font-size: 10vw; /*10vw del tamaño de la fuente*/
+    width: 100vw; /* del ancho del tamaño de la pantalla*/
+    font-size: 10vw; /*10vw del tamaño de la fuente*/
 }
 
 body {
-  font-family: "Open Sans";
-  /* height: 100vh; */
-  margin: 0px;
-  background-repeat: no-repeat;
-  background-color: var(--body-background);
+    font-family: "Open Sans";
+    /* height: 100vh; */
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-color: var(--body-background);
 }
 
 /* Fuente titulo principal */
 
 span {
-  font-family: "Yanone Kaffeesatz", sans-serif;
-  letter-spacing: 0.1vw;
-  font-size: 1.46vw;
-  color: var(--white);
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    letter-spacing: 0.1vw;
+    font-size: 1.46vw;
+    color: var(--white);
 }
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Yanone Kaffeesatz", sans-serif;
-  letter-spacing: 0.1vw;
-  font-size: 2.92vw;
-  color: var(--title-color);
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    letter-spacing: 0.1vw;
+    font-size: 2.92vw;
+    color: var(--title-color);
 }
 
 input {
-  height: 3vw;
-  border-radius: 0.5vw;
-  background-color: var(--white-semi-transparent);
+    height: 3vw;
+    border-radius: 0.5vw;
+    background-color: var(--white-semi-transparent);
 }
 textarea {
-  border-radius: 0.5vw;
-  background-color: var(--white-semi-transparent);
+    border-radius: 0.5vw;
+    background-color: var(--white-semi-transparent);
 }
 textarea::-moz-placeholder,
 textarea::-webkit-input-placeholder {
-  font-size: 2vw;
+    font-size: 2vw;
 }
 input::-webkit-input-placeholder {
-  font-size: 2vw;
+    font-size: 2vw;
 }
 input::-moz-placeholder {
-  font-size: 2vw;
+    font-size: 2vw;
 }
 
 section {
-  width: 90%;
-  margin-bottom: 7.32vw;
+    width: 90%;
+    margin-bottom: 7.32vw;
 }
 
 .about-text,
 label {
-  font-family: "Yanone Kaffeesatz", sans-serif;
-  letter-spacing: 0.1vw;
-  font-size: 1.83vw;
-  color: var(--white);
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    letter-spacing: 0.1vw;
+    font-size: 1.83vw;
+    color: var(--white);
 }
 
 /* Botton  */
 button {
-  margin: 3.66vw;
-  font-family: inherit;
-  border-radius: 0px 0px 0px 1vw;
+    margin: 3.66vw;
+    font-family: inherit;
+    border-radius: 0px 0px 0px 1vw;
 }
 /*  Simple button styling -- No animation */
 .der,
 .izq {
-  font-size: 1.46vw;
-  font-weight: 200;
-  letter-spacing: 0.07vw;
-  padding: 0.95vw 3.66vw 0.95vw;
-  outline: 0;
-  border: 1px solid var(--button-border);
-  cursor: pointer;
-  position: relative;
-  border-radius: 0px 0px 0px 1vw;
-  background-color: var(--transparent);
+    font-size: 1.46vw;
+    font-weight: 200;
+    letter-spacing: 0.07vw;
+    padding: 0.95vw 3.66vw 0.95vw;
+    outline: 0;
+    border: 1px solid var(--button-border);
+    cursor: pointer;
+    position: relative;
+    border-radius: 0px 0px 0px 1vw;
+    background-color: var(--transparent);
 }
 
 .der::after {
-  content: "";
-  background-color: var(--button-background);
-  width: 100%;
-  z-index: -1;
-  position: absolute;
-  height: 100%;
-  top: 0.51vw;
-  left: 0.51vw;
-  border-radius: 0px 0px 0px 1vw;
+    content: "";
+    background-color: var(--button-background);
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 0.51vw;
+    left: 0.51vw;
+    border-radius: 0px 0px 0px 1vw;
 }
 
 .izq::after {
-  content: "";
-  background-color: var(--button-background);
-  width: 100%;
-  z-index: -1;
-  position: absolute;
-  height: 100%;
-  top: 0.51vw;
-  left: 0.51vw;
-  border-radius: 0px 0px 0px 1vw;
+    content: "";
+    background-color: var(--button-background);
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 0.51vw;
+    left: 0.51vw;
+    border-radius: 0px 0px 0px 1vw;
 }
 
 /* Las em estan atasdas al taaño de la fuente del elemento padre
@@ -169,129 +172,293 @@ rem esta atado el tamaño de letra qeu tiene el body
 */
 
 .card {
-  background-color: var(--presentation-background);
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 3px 3px rgb(247, 180, 35), -1em 0 0.4em rgb(255, 172, 94);
+    background-color: var(--presentation-background);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 3px 3px rgb(247, 180, 35), -1em 0 0.4em rgb(255, 172, 94);
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /*  Estilos de presentacion*/
 #seccion-presentacion {
-  width: 90%;
-  display: flex;
-  flex-direction: row;
-  justify-self: center;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
 }
 #contenedor-imagen-presentacion {
-  display: flex;
-  align-items: flex-end;
-  /* width: 40vw; */
-  height: auto;
-  max-width: 600px;
-  margin-bottom: 0px;
+    display: flex;
+    align-items: flex-end;
+    /* width: 40vw; */
+    height: auto;
+    max-width: 600px;
+    margin-bottom: 0px;
 }
 #imagen-presentacion {
-  width: 40vw;
-  height: auto;
-  max-width: 600px;
-  margin-bottom: 0px;
+    width: 40vw;
+    height: auto;
+    max-width: 600px;
+    margin-bottom: 0px;
 }
 #descripcion-presentacion {
-  font-size: 1.83vw;
+    font-size: 1.83vw;
 }
 
 @media screen and (max-width: 1200px) {
-  #contenedor-imagen-presentacion {
-    display: none;
-  }
-  #contenedor-texto-presentacion {
-    width: 100%;
-    justify-self: center;
-  }
-  #seccion-presentacion {
-    height: auto;
-  }
-  section {
-    margin-bottom: 10vw;
-  }
-  #sobre-mi-columna2 {
-    display: none;
-  }
+    #contenedor-imagen-presentacion {
+        display: none;
+    }
+    #contenedor-texto-presentacion {
+        width: 100%;
+        justify-self: center;
+    }
+    #seccion-presentacion {
+        height: auto;
+    }
+    section {
+        margin-bottom: 10vw;
+    }
+    #sobre-mi-columna2 {
+        display: none;
+    }
 }
 
 /* Menu de navegacion */
 #menu-container {
-  display: flex;
-  flex-direction: row; /* en file*/
-  width: 100%;
-  justify-content: space-evenly;
-  height: 3.5rem;
+    display: flex;
+    flex-direction: row; /* en file*/
+    width: 100%;
+    justify-content: space-evenly;
+    height: 3.5rem;
 }
 
 #items-container {
-  display: flex;
-  flex-direction: row; /* en file*/
-  justify-content: space-between;
+    display: flex;
+    flex-direction: row; /* en file*/
+    justify-content: space-between;
 }
 
 .items {
-  color: var(--white);
-  list-style: none;
-  margin-left: 10px;
-  display: block;
-  padding: 5px;
-  background: rgb(152, 236, 159);
-  text-decoration: none;
-  color: var(--black);
+    color: var(--white);
+    list-style: none;
+    margin-left: 10px;
+    display: block;
+    padding: 5px;
+    background: rgb(152, 236, 159);
+    text-decoration: none;
+    color: var(--black);
 }
 .btn-menu,
 .btn-icon {
-  margin: 5px;
-  background-color: var(--beige);
-  height: 35px;
-  color: var(--black);
+    margin: 5px;
+    background-color: var(--beige);
+    height: 35px;
+    color: var(--black);
 }
 
 .btn-icon {
-  position: absolute;
-  cursor: pointer;
+    position: absolute;
+    cursor: pointer;
 }
 
 /* Enviar mail  */
 .form-group {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 3vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3vw;
 }
 #contacto {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 #email-div,
 #mobile-div {
-  width: 50%;
+    width: 50%;
 }
 #img-mobile-version {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  max-width: 400px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-width: 400px;
 }
 
 .columnas {
-  display: flex;
-  flex-direction: row-reverse;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .centrado-vertical {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
+}
+
+#sidemenu {
+    background-color: var(--body-background);
+    position: fixed;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    left: 0;
+    top: 0;
+}
+
+/* ancho del scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+aside::-webkit-scrollbar {
+    width: 5px;
+}
+
+/*barra trasera del scrollbar */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* barra del scroll */
+::-webkit-scrollbar-thumb {
+    background: rgb(252, 180, 114);
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#sidemenu #header {
+    box-sizing: border-box;
+    border-bottom: solid 1px #000;
+}
+
+#sidemenu #header #title {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#sidemenu #header #title,
+#sidemenu #header #menu-btn {
+    vertical-align: middle;
+}
+
+#sidemenu #header #menu-btn {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+    width: 50px;
+    box-sizing: border-box;
+}
+
+#sidemenu #header #menu-btn .btn-hamburger {
+    background-color: #fff;
+    width: 100%;
+    height: 2px;
+    margin: 5px 0;
+}
+
+#sidemenu #profile {
+    border-bottom: solid 1px #000;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#sidemenu #profile #foto {
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+#sidemenu #profile #foto img {
+    border-radius: 50%;
+    width: 60%;
+    height: auto;
+}
+
+#sidemenu #profile #foto,
+#sidemenu #profile #nombre {
+    font-size: 24px;
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+#sidemenu #menu-items {
+    overflow: hidden;
+}
+
+#sidemenu #menu-items .item {
+    width: var(--side-menu-width);
+}
+
+#sidemenu #menu-items .item .icon {
+    display: inline-block;
+}
+
+#sidemanu #menu-items .item .icon,
+#sidemenu #menu-items .item .title {
+    font-size: 14px;
+    vertical-align: 0px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#sidemenu #menu-items .item {
+    display: block;
+}
+
+#sidemenu #menu-items .item:hover {
+    background-color: var(--hover-color);
+}
+
+#sidemenu #menu-items .item .icon {
+    box-sizing: border-box;
+    padding: 10px;
+    width: var(--side-menu-collapsed-width);
+}
+
+#sidemenu #menu-items .item .icon img {
+    width: 100%;
+}
+
+#sidemenu #menu-items .item .title {
+    padding: 10px 0;
+}
+
+.menu-expanded #header #title span {
+    width: calc(var(--side-menu-width)-var(--side-menu-collapsed-width)-5px);
+    overflow: hidden;
+    display: inline-block;
+}
+
+.menu-expanded #profile #foto {
+    width: 200px;
+}
+.menu-expanded #profile #nombre {
+    width: 100%;
+}
+
+.menu-collapsed {
+    width: var(--side-menu-collapsed-width);
+}
+
+.menu-collapsed #header #title {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-collapsed #profile #nombre {
+    display: none;
+}
+
+.menu-collapsed .item {
+    width: 100%;
 }
