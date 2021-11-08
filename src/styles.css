@@ -26,6 +26,8 @@
     --side-menu-width: 300px;
     --side-menu-collapsed-width: 50px;
     --hover-color: #f89940;
+    --font-principal: "Open Sans";
+    --font-secondary: "Yanone Kaffeesatz", sans-serif;
 }
 
 .contenedor-principal {
@@ -111,6 +113,13 @@ label {
     color: var(--white);
 }
 
+p{
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    letter-spacing: 0.1vw;
+    font-size: 1.83vw;
+    color: var(--white);
+}
+
 /* Botton  */
 button {
     margin: 3.66vw;
@@ -187,6 +196,7 @@ main {
 
 /*  Estilos de presentacion*/
 #seccion-presentacion {
+    margin-top:60px;
     width: 90%;
     display: flex;
     flex-direction: row;
@@ -206,9 +216,9 @@ main {
     max-width: 600px;
     margin-bottom: 0px;
 }
-#descripcion-presentacion {
+/* #descripcion-presentacion {
     font-size: 1.83vw;
-}
+} */
 
 @media screen and (max-width: 1200px) {
     #contenedor-imagen-presentacion {
@@ -227,15 +237,28 @@ main {
     #sobre-mi-columna2 {
         display: none;
     }
+    p {
+        font-size: 4vw;
+    }
+    h2{
+        font-size:5vw
+    }
+    span {
+        font-size: 3vw;
+    }
 }
 
 /* Menu de navegacion */
 #menu-container {
+    background-color: var(--body-background);
+    z-index: 2;
     display: flex;
     flex-direction: row; /* en file*/
     width: 100%;
     justify-content: space-evenly;
     height: 3.5rem;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
 }
 
 #items-container {
@@ -250,9 +273,14 @@ main {
     margin-left: 10px;
     display: block;
     padding: 5px;
-    background: rgb(152, 236, 159);
+    background: #3BC9ED;
     text-decoration: none;
     color: var(--black);
+    border-radius: 0px 25% 0px 25%;
+    font-family: var(--font-secondary);
+    color:#f1f1f1;
+    font-size: 20px;
+
 }
 .btn-menu,
 .btn-icon {
@@ -277,9 +305,13 @@ main {
     display: flex;
     flex-direction: row;
 }
-#email-div,
+#email-div{
+  width: 50%;
+}
 #mobile-div {
     width: 50%;
+    display: flex;
+    justify-content: center;
 }
 #img-mobile-version {
     display: block;
@@ -303,10 +335,13 @@ main {
     background-color: var(--body-background);
     position: fixed;
     height: 100%;
-    overflow-y: scroll;
+    overflow-y: hidden;
     overflow-x: hidden;
-    left: 0;
+    scrollbar-color: #0A4C95 #C2D2E4;
+    scrollbar-width: thin;
+    right: 0;
     top: 0;
+    z-index: 3;
 }
 
 /* ancho del scrollbar */
@@ -315,7 +350,7 @@ main {
 }
 
 aside::-webkit-scrollbar {
-    width: 5px;
+    width: 0px;
 }
 
 /*barra trasera del scrollbar */

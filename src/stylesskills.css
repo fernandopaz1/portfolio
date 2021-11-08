@@ -216,3 +216,13 @@ main {
   text-decoration: none;
   color: var(--black);
 }
+
+section{
+  display: flex;
+  flex-direction: row;
+}
+
+#contenedor-imagen-skill{
+  display: flex;
+  align-items: center
+}
